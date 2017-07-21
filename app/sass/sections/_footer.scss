@@ -1,0 +1,113 @@
+.b-bigfoot{
+	width: 100%;
+	max-width: 1950px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: $gray-4;
+	.b-holdfoot{
+		width: 100%;
+		max-width: 1000px;
+		overflow: hidden;
+		margin:0 auto;
+		padding: 0 20px 0 20px;
+		@include breakpoint(mobile){max-width: 250px;}
+		.b-infoot-1{
+			width: 35%;
+		    float: left;
+		    overflow: hidden;
+		    margin: 100px 0;
+		    line-height: 1.3;
+		    @include breakpoint(mobile) {
+		    	margin: 20px auto;
+		    	width: 100%;
+		    }
+		}
+		.b-infoot-2{
+			width: 35%;
+		    float: left;
+		    overflow: hidden;
+		    margin: 100px 0;
+		    padding-left: 3%;
+		    line-height: 1.3;
+		    @include breakpoint(mobile) {
+		    	width: 100%;
+		    	margin: 20px auto;
+		    	padding:0;
+		    }
+		}
+		.b-infoot-3{
+			width: 30%;
+		    float: left;
+		    overflow: hidden;
+		    margin: 100px 0;
+		    padding-left: 8%;
+		    line-height: 1.3;
+		    @include breakpoint(mobile) {
+		    	width: 100%;
+		    	margin: 20px auto;
+		    	padding:0;
+		    }
+		}
+		.item-cityfoot{
+			margin-bottom: 10px;
+			p{
+				color: $white;
+    			font-size: 15px;
+			}
+			img{
+				height: 19px;
+				float: left;
+				margin-right: 10px;
+			}
+		}
+		.item-parfoot p{color: $gray-6;}
+	}
+}
+.b-smallfoot{
+	width: 100%;
+	max-width: 1950px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: $gray-5;
+	.b-holdsmallfoot{
+		width: 100%;
+		max-width: 1000px;
+		overflow: hidden;
+		margin:0 auto;
+		.b-copy{
+			width: 100%;
+			max-width: 330px;
+			color: $gray-6;
+		    font-size: 12px;
+		    float: left;
+		    margin: 20px 0px 15px 15px;
+		    @include breakpoint(mobile) {
+		    	float: none;
+		    	font-size: 10px;
+	  			width: 260px;
+	    		margin: 10px auto;
+		    }
+		}
+		.b-awesome{
+			width: 100%;
+			max-width: 230px;
+			color: $gray-6;
+			float: right;
+			margin-right: 15px;
+			@include breakpoint(mobile) {
+				float: none;
+				width: 226px;
+				margin: 0 auto;
+			}
+			p{
+				margin: 17px 0px 0px 10px;
+				font-size: 12px;
+				float: right;
+			}
+			i{
+				margin: 10px 7px;
+				font-size: 25px;
+			}
+		}
+	}
+}

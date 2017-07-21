@@ -1,0 +1,53 @@
+.b-home{
+	background-image: url(../img/diwanee-serbia.png);
+    max-width: 1950px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 300px;
+    padding-bottom: 350px;
+    margin:0 auto;
+    @include breakpoint(littlemobile) {
+        background-image: url(../img/diwanee-mob.png);
+        background-size: cover;
+        background-position: center;
+        padding-top: 200px;
+        padding-bottom: 200px;}
+    .b-over{
+        width: 100%;
+        max-width: 900px;
+    	text-align: center;
+    	margin: 0 auto;
+    	h1{
+    		font-size: 70px;
+    		letter-spacing: 10px;
+            @include breakpoint(mobile) {
+                font-size: 50px;
+                padding: 0 15px 0 15px;
+            }
+        }
+    	p{
+    		font-size: 29px;
+            width: 100%;
+			max-width: 700px;
+			margin: 0 auto;
+            @include breakpoint(mobile) {
+                font-size: 25px;
+                padding: 0 15px 0 15px;
+            }
+    	}
+    	img{
+    		height: 3px;
+    		width: 70px;
+    		margin: 25px 0 50px 0;
+    	}
+    	.item-show{
+            display:none;
+            @include breakpoint(littlemobile){display:block;}
+        }
+        .item-hide{
+            display:block;
+            @include breakpoint(littlemobile){display:none;}
+        }
+    }
+}
